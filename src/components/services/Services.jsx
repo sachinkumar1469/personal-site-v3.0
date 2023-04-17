@@ -22,7 +22,7 @@ function Services() {
     }
   ]
   return (
-    <section className="services section" id="services">
+    <section className="services section">
       <h2 className="section__title">Roles</h2>
       <span className="section__subtitle">I can fit for</span>
       <div className="services__container container grid">

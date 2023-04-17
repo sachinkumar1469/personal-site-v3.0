@@ -10,7 +10,7 @@ import project6 from '../../assets/images/project6.png';
 
 function Projects() {
   return (
-    <section className="section projects">
+    <section className="section projects" id='projects'>
         <h2 className="section__title">Projects</h2>
         <span className="section__subtitle">Most recent work</span>
 
