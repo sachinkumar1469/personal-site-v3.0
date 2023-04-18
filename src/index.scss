@@ -104,6 +104,19 @@ img {
   height: auto;
 }
 
+// dark mode
+body.dark-theme{
+  --first-color-second: hsl(250, 30%, 8%);
+  --title-color: hsl(250, 8%, 95%);
+  --text-color: hsl(250, 8%, 75%);
+  --input-color: hsl(250, 29%, 16%);
+  --body-color: hsl(250, 28%, 12%);
+  --container-color: hsl(250, 29%, 16%);
+  --scroll-bar-color: hsl(250, 12%, 48%);
+  --scroll-thumb-color: hsl(250, 12%, 30%);
+}
+
+
 /* Reusable css clasess */
 .section{
   padding: 2rem 0 4rem;
@@ -126,7 +139,7 @@ img {
 /* Layout */
 .container{
   // border: 1px solid red;
-  max-width: 768px;
+  max-width: 800px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -149,7 +162,7 @@ img {
 }
 
 .nav{
-  max-width: 968px;
+  max-width: 1150px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -159,6 +172,8 @@ img {
 .nav__logo,.nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-medium);
+  display: flex;
+  align-items: center;
 }
 
 .nav__logo:hover{
@@ -219,6 +234,23 @@ img {
 }
 .nav__close{
   color: var(--first-color-alt);
+}
+.nav__btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  list-style: none;
+  
+}
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+.change-theme:hover{
+  color: var(--first-color);
 }
 
 .show-menu{
@@ -362,7 +394,7 @@ img {
 .about__info-title{
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
-  color: #242329;
+  color: var(--title-color);
 }
 .about__info-name{
   font-size: var(--smaller-font-size);
@@ -671,14 +703,14 @@ img {
     height: 60%;
     width: 90%;
     overflow-y: auto;
-    &::-webkit-scrollbar{
-      width: 0.5rem;
-    } 
-    &::-webkit-scrollbar-thumb{
-      background-color: var(--text-color-light);
+    ::-webkit-scrollbar{
+      width: 0.6rem;
+      background-color: var(--scroll-bar-color);
+      border-radius: 0.5rem;
     }
-    &::-webkit-scrollbar-track{
-      background: #fff;
+    ::-webkit-scrollbar-thumb{
+      background-color: var(--scroll-thumb-color);
+      border-radius: 0.5rem;
     }
   }
   .project__modal-services{
@@ -768,14 +800,14 @@ img {
       font-weight: 500;
       font-size: 18px;
       line-height: 27px;
-      color: #242329;
+      color: var(--body-font);
     }
     span{
       font-style: normal;
       font-weight: 400;
       font-size: 13px;
       line-height: 20px;
-      color: #6D6A7C;
+      color: var(--body-font);
       a{
         text-decoration: none;
         color: inherit;
@@ -789,13 +821,13 @@ img {
       display: flex;
       flex-direction: column;
       gap:7px;
-      background: #F0EEFC;
+      background: var(--input-color);
       border-radius: 8px;
       padding: 12px 16px;
       label{
         font-size: 13px;
         line-height: 20px;
-        color: #242329;
+        color: var(--body-font);
         font-weight: 400;
       }
       input{
@@ -831,6 +863,12 @@ img {
       font-size: 14px;
       line-height: 21px;
       text-decoration: none;
+      transition: .3s;
+      position: relative;
+      &:hover{
+        transform: scale(1.1);
+        text-decoration: underline;
+      }
     }
   }
   .footer__socials{
@@ -838,7 +876,7 @@ img {
     gap: 1rem;
     a{
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       transition: .3s;
       &:hover{
         transform: scale(1.1);
@@ -855,8 +893,8 @@ img {
 .scroll-up-btn{
   position: fixed;
   right: 1rem;
-  bottom: 4rem;
-  display: none;
+  bottom: -3rem;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -865,8 +903,19 @@ img {
   opacity: 0.8;
   padding: 0.4rem;
   z-index: var(--z-tooltip);
-  transition: .3s;
+  transition: .5s;
 }
 .scroll-up-btn.active{
-  display: flex;
+  // display: flex;
+  bottom: 4rem;
+}
+
+::-webkit-scrollbar{
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  // border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  // border-radius: 0.5rem;
 }

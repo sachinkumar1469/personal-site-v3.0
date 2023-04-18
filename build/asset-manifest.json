@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d8ee916.css",
+    "main.js": "/static/js/main.e3052a7c.js",
+    "static/media/project4.png": "/static/media/project4.cdad1b7921c4ce8296c8.png",
+    "static/media/bg-free.png": "/static/media/bg-free.2cf539bc1db311d4ecc4.png",
+    "static/media/front.jpg": "/static/media/front.80dc788dd7df29a02806.jpg",
+    "static/media/dsa.jpg": "/static/media/dsa.fd374f68533cd77e5a89.jpg",
+    "static/media/java.jpg": "/static/media/java.64e3336825cc904e7bc3.jpg",
+    "static/media/project1.png": "/static/media/project1.16f74d4f645910d5e71b.png",
+    "static/media/project3.png": "/static/media/project3.3e667604a6c6e2feb25d.png",
+    "static/media/project6.png": "/static/media/project6.92a1886c615d9be20bbe.png",
+    "static/media/project2.png": "/static/media/project2.a62abf40d2ede711edef.png",
+    "static/media/project5.png": "/static/media/project5.e68f347f5ca1ac9b9e67.png",
+    "static/media/about.jpg": "/static/media/about.93d569104848a563d1b7.jpg",
+    "static/media/sachin.jpg": "/static/media/sachin.e56f20666266f55d1f9a.jpg",
+    "index.html": "/index.html",
+    "main.0d8ee916.css.map": "/static/css/main.0d8ee916.css.map",
+    "main.e3052a7c.js.map": "/static/js/main.e3052a7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d8ee916.css",
+    "static/js/main.e3052a7c.js"
+  ]
+}
